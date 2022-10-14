@@ -107,7 +107,7 @@ let divIndexHtml = `<table>
 const projectsInfo = `<h4 class="header top">PROJECTS or EXERCISES</h4>
 <p>To your left you will find my Projects index<br>
 Click on any project to display it here.<br>
-Clicking on the BitHub Repository on the links below will open a new tab.
+Clicking on the GitHub Repository on the links below will open a new tab.
 </p><hr>
 <p>
 <h5 class="header">PacMen</h5>
@@ -133,19 +133,27 @@ Then I included a few bonus or extra exercises:
 <p>
 <h5 class="header">Drawing Shapes</h5>
 User can choose ammount of circles to draw. And the radius around which they will be drawn.
+<br>
+<a href="https://github.com/ramon-cortes/draws_circle_pattern" target="_blank">GitHub Repository</a>
 </p>
 <p>
 <h5 class="header">Ball Bounce 3D</h5>
 Based on the ball move exercise. I tried to add a 3D effect by increasing ball size and adding a shadow.
+<br>
+<a href="https://github.com/ramon-cortes/ball_bounce_3d" target="_blank">GitHub Repository</a>
 </p>
 <p>
 <h5 class="header">Helicopter</h5>
 Based on the PacMan exercise. I changed the picture for a Helicopter. And included functionality by using clientx and clienty methods (which I am still unsure how they operate, but they do return the position where the user clicks).<br>
 User can click a position within the darker blue boundaries and the Helicopter will fly there.
+<br>
+<a href="https://github.com/ramon-cortes/helicopter" target="_blank">GitHub Repository</a>
 </p>
 <p>
 <h5 class="header">Walk Boston Data</h5>
 User can choose between filter options and parameters. Result will be displayed on a table rather than just an unordered list.
+<br>
+<a href="https://github.com/ramon-cortes/boston_data" target="_blank">GitHub Repository</a>
 </p>`
 
 //Projects fading color variables
