@@ -31,7 +31,9 @@ Styles used:
 - Color
 - Navigation (Bootstrap's)
 - Image
-- Styled links (Bootstrap's and inside rcl_portfolio.js line 207 for the project's left menu. That's not precisely a link *<a>* but works like one in conjuction with *.addEventListener("click"*)
+- Styled links
+  - Bootstrap's
+  - Also inside rcl_portfolio.js line around 207 (*menuItems[x].style.color = 'rgb..*) for the project's left menu. That's not precisely a link *<a>* but works like one in conjuction with *.addEventListener("click"*)
 - Grid layout
 
 ### Files with BootStrap Import
