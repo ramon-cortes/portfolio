@@ -33,8 +33,7 @@ Styles used:
 - Image
 - Styled links 
   - Bootstrap's
-  - *.proj-links* (line around 69) 
-  Links are blue but thats because that's the theme color. But I removed the underline)
+  - *.proj-links* (line around 69) Links are blue because that's the theme color. But I removed the underline)
   - Also inside rcl_portfolio.js line around 207 (*menuItems[x].style.color = 'rgb..*) for the project's left menu. That's not precisely a link *<a>* but works like one in conjuction with *.addEventListener("click"..*)
 - Grid layout
 
