@@ -53,13 +53,14 @@ const bio = `<div class="card smaller">
     </ul>
   </p>
   <p class="card-text">Also I self-taught some 3D Studio Max and Basic Python</p>
-  <a href="https://www.youtube.com/watch?v=_Jw5dK19orY" class="btn btn-primary smaller" target="_blank">3DS Max Skills Demo</a> Modeling starts at 0:30<br>
-  <a class="nav-link" href="mailto:ramoncortes.varios@gmail.com">
+  <a href="https://www.youtube.com/watch?v=_Jw5dK19orY" class="btn btn-primary smaller" target="_blank">3DS Max Skills Demo</a> Modeling starts at 0:30</p>
+  <p class="card-text">
+  <a href="mailto:ramoncortes.varios@gmail.com">
   <img src="images/email-logo2.jpg" alt="Email" width="35" height="35"></a>
-  <a class="nav-link" href="https://github.com/ramon-cortes" target="_blank">
+  <a href="https://github.com/ramon-cortes" target="_blank">
   <img src="images/github-logo2.jpg" alt="GitHub" width="35" height="35"></a>
-  <a class="nav-link" href="https://www.linkedin.com/in/ramon-cortes-l" target="_blank">
-  <img src="images/linkedin-logo2.jpg" alt="LinkedIn" width="35" height="35"></a>
+  <a href="https://www.linkedin.com/in/ramon-cortes-l" target="_blank">
+  <img src="images/linkedin-logo2.jpg" alt="LinkedIn" width="35" height="35"></a></p>
 </div>
 </div>`;
 
