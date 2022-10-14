@@ -60,3 +60,13 @@ table, th, td {
 .blue {
   background-color: rgb(41, 80, 209);
 }
+
+.icon-image {
+  width: 35px;
+  height: 35px;
+}
+
+.proj-links:hover {
+  font-weight: bold;
+  text-decoration-line: none;
+}

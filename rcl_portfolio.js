@@ -19,15 +19,15 @@ const bootStrapNavBar = `<nav class="navbar navbar-expand-lg navbar-darkblue bg-
     </li>
     <li class="nav-item">
       <a class="nav-link" href="mailto:ramoncortes.varios@gmail.com">
-      <img src="images/email-logo.jpg" alt="Email" width="35" height="35"></a>
+      <img class="icon-image" src="images/email-logo.jpg" alt="Email"></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="https://github.com/ramon-cortes" target="_blank">
-      <img src="images/github-logo.jpg" alt="GitHub" width="35" height="35"></a>
+      <img class="icon-image" src="images/github-logo.jpg" alt="GitHub"></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="https://www.linkedin.com/in/ramon-cortes-l" target="_blank">
-      <img src="images/linkedin-logo.jpg" alt="LinkedIn" width="35" height="35"></a>
+      <img class="icon-image" src="images/linkedin-logo.jpg" alt="LinkedIn"></a>
     </li>
   </ul>
 </div>
@@ -56,11 +56,11 @@ const bio = `<div class="card smaller">
   <a href="https://www.youtube.com/watch?v=_Jw5dK19orY" class="btn btn-primary smaller" target="_blank">3DS Max Skills Demo</a> Modeling starts at 0:30</p>
   <p class="card-text">
   <a href="mailto:ramoncortes.varios@gmail.com">
-  <img src="images/email-logo2.jpg" alt="Email" width="35" height="35"></a>
+  <img class="icon-image" src="images/email-logo2.jpg" alt="Email"></a>
   <a href="https://github.com/ramon-cortes" target="_blank">
-  <img src="images/github-logo2.jpg" alt="GitHub" width="35" height="35"></a>
+  <img class="icon-image" src="images/github-logo2.jpg" alt="GitHub"></a>
   <a href="https://www.linkedin.com/in/ramon-cortes-l" target="_blank">
-  <img src="images/linkedin-logo2.jpg" alt="LinkedIn" width="35" height="35"></a></p>
+  <img class="icon-image" src="images/linkedin-logo2.jpg" alt="LinkedIn"></a></p>
 </div>
 </div>`;
 
@@ -119,13 +119,13 @@ Clicking on the GitHub Repository on the links below will open a new tab.
 <h5 class="header">PacMen</h5>
 I added a "squishy" effect when the pacmen reach left or right borders.
 <br>
-<a href="https://github.com/ramon-cortes/pacmen" target="_blank">GitHub Repository</a>
+<a class="proj-links" href="https://github.com/ramon-cortes/pacmen" target="_blank">GitHub Repository</a>
 </p>
 <p>
 <h5 class="header">Eye</h5>
 Nothing special. Just does what it's supposed to.
 <br>
-<a href="https://github.com/ramon-cortes/eye" target="_blank">GitHub Repository</a>
+<a class="proj-links" href="https://github.com/ramon-cortes/eye" target="_blank">GitHub Repository</a>
 </p>
 <p>
 <h5 class="header">Real Time Bus Tracker</h5>
@@ -133,33 +133,33 @@ Added seat availability, Latitude & Longitude info above the map<br>
 I noticed that it does not work afterhours. Probably they shut down the service<br>
 Please do not re-open this project or refresh it multiple times. The boston page may receive many consecutive requests and I might get banned.
 <br>
-<a href="https://github.com/ramon-cortes/boston_busr19" target="_blank">GitHub Repository</a>
+<a class="proj-links" href="https://github.com/ramon-cortes/boston_busr19" target="_blank">GitHub Repository</a>
 </p><hr>
 Then I included a few bonus or extra exercises:
 <p>
 <h5 class="header">Drawing Shapes</h5>
 User can choose ammount of circles to draw. And the radius around which they will be drawn.
 <br>
-<a href="https://github.com/ramon-cortes/draws_circle_pattern" target="_blank">GitHub Repository</a>
+<a class="proj-links" href="https://github.com/ramon-cortes/draws_circle_pattern" target="_blank">GitHub Repository</a>
 </p>
 <p>
 <h5 class="header">Ball Bounce 3D</h5>
 Based on the ball move exercise. I tried to add a 3D effect by increasing ball size and adding a shadow.
 <br>
-<a href="https://github.com/ramon-cortes/ball_bounce_3d" target="_blank">GitHub Repository</a>
+<a class="proj-links" href="https://github.com/ramon-cortes/ball_bounce_3d" target="_blank">GitHub Repository</a>
 </p>
 <p>
 <h5 class="header">Helicopter</h5>
 Based on the PacMan exercise. I changed the picture for a Helicopter. And included functionality by using clientx and clienty methods (which I am still unsure how they operate, but they do return the position where the user clicks).<br>
 User can click a position within the darker blue boundaries and the Helicopter will fly there.
 <br>
-<a href="https://github.com/ramon-cortes/helicopter" target="_blank">GitHub Repository</a>
+<a class="proj-links" href="https://github.com/ramon-cortes/helicopter" target="_blank">GitHub Repository</a>
 </p>
 <p>
 <h5 class="header">Walk Boston Data</h5>
 User can choose between filter options and parameters. Result will be displayed on a table rather than just an unordered list.
 <br>
-<a href="https://github.com/ramon-cortes/boston_data" target="_blank">GitHub Repository</a>
+<a class="proj-links" href="https://github.com/ramon-cortes/boston_data" target="_blank">GitHub Repository</a>
 </p>`
 
 //Projects fading color variables
