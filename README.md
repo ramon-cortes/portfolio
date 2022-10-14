@@ -23,7 +23,7 @@ Best way to reach me is probably email (be patient)
 
 https://github.com/ramon-cortes/portfolio
 
-rcl_portfolio.css
+*rcl_portfolio.css*
 
 Styles used:
 
@@ -33,6 +33,7 @@ Styles used:
 - Image
 - Styled links
   - Bootstrap's
+  - .proj-links
   - Also inside rcl_portfolio.js line around 207 (*menuItems[x].style.color = 'rgb..*) for the project's left menu. That's not precisely a link *<a>* but works like one in conjuction with *.addEventListener("click"..*)
 - Grid layout
 
