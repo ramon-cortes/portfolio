@@ -19,15 +19,15 @@ const bootStrapNavBar = `<nav class="navbar navbar-expand-lg navbar-darkblue bg-
     </li>
     <li class="nav-item">
       <a class="nav-link" href="mailto:ramoncortes.varios@gmail.com">
-      <img class="icon-image" src="images/email-logo.jpg" alt="Email"></a>
+      <img class="icon-image" id="icon0" src="images/email-logo.jpg" alt="email"></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="https://github.com/ramon-cortes" target="_blank">
-      <img class="icon-image" src="images/github-logo.jpg" alt="GitHub"></a>
+      <img class="icon-image" id="icon1" src="images/github-logo.jpg" alt="GitHub"></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="https://www.linkedin.com/in/ramon-cortes-l" target="_blank">
-      <img class="icon-image" src="images/linkedin-logo.jpg" alt="LinkedIn"></a>
+      <img class="icon-image" id="icon2" src="images/linkedin-logo.jpg" alt="LinkedIn"></a>
     </li>
   </ul>
 </div>
@@ -56,11 +56,11 @@ const bio = `<div class="card smaller">
   <a href="https://www.youtube.com/watch?v=_Jw5dK19orY" class="btn btn-primary smaller" target="_blank">3DS Max Skills Demo</a> Modeling starts at 0:30</p>
   <p class="card-text">
   <a href="mailto:ramoncortes.varios@gmail.com">
-  <img class="icon-image" src="images/email-logo2.jpg" alt="Email"></a>
+  <img class="icon-image" id="icon3" src="images/email-logo2.jpg" alt="email"></a>
   <a href="https://github.com/ramon-cortes" target="_blank">
-  <img class="icon-image" src="images/github-logo2.jpg" alt="GitHub"></a>
+  <img class="icon-image" id="icon4" src="images/github-logo2.jpg" alt="GitHub"></a>
   <a href="https://www.linkedin.com/in/ramon-cortes-l" target="_blank">
-  <img class="icon-image" src="images/linkedin-logo2.jpg" alt="LinkedIn"></a></p>
+  <img class="icon-image" id="icon5" src="images/linkedin-logo2.jpg" alt="LinkedIn"></a></p>
 </div>
 </div>`;
 
@@ -72,7 +72,7 @@ const videoRcl = `<iframe width="350" height="250" src="https://www.youtube.com/
 /*const landingPage = `<div class="start-page">
 <h4 class="header">Welcome to Ramon Cortes' Porfolio website</h4>
 Feel free to check my <b>Bio</b> and <b>Projects</b>.<br>
-You will also find my email and my GitHub page (opens in a new tab)
+You will also find my icon and my GitHub page (opens in a new tab)
 </div><hr>
 <div class="start-page smaller">
   NOTE: If you browsers width is below 1000px Bootstrap's Nav Bar will collapse.
@@ -166,6 +166,9 @@ User can choose between filter options and parameters. Result will be displayed 
 const menuItems = [];
 let id = []; //timeOut id
 
+//Icons On/Off variables
+const icons = [];
+
 //Projects menu: Will open html at the right
 function openPage(id, div) {
   if (id == 'menu1') {
@@ -220,7 +223,7 @@ function noTieneFocus(x) {
     } else {
       colorActual[i] = 255;
     }
-  }
+  }  
 
   menuItems[x].style.background = 'rgb(' + colorActual[0] + ',' + colorActual[1] + ',' + colorActual[2] + ')';
   //menuItems[x + 1].style.color = 'rgb(0, 0, 255)';
@@ -243,6 +246,19 @@ window.onload = () => {
   divWrapper.className = 'divWrapper';
   //divWrapper.classList.add('divWrapper');
   body.appendChild(divWrapper);
+
+  //When mouse is over and off an icon
+  //   Cantidad de íconos
+  //                  ↓
+  for (let i = 0; i < 3; i++) {
+    icons.push(document.getElementById('icon' + i));
+    icons[i].addEventListener("mouseover", () => {
+      icons[i].src = icons[i].src.replace('logo', 'logo-o');
+    }, false);
+    icons[i].addEventListener("mouseleave", () => {
+      icons[i].src = icons[i].src.replace('logo-o', 'logo');
+    }, false);
+  } 
   
   //Probably my logic is not the way to do it but...:
 
@@ -262,6 +278,19 @@ window.onload = () => {
     cards[0].innerHTML = fotoRcl;
     cards[1].innerHTML = bio;
     cards[2].innerHTML = videoRcl;
+    //Bio's Icon change
+    const iconsBio = [];
+    //   Cantidad de íconos en Bio
+    //                  ↓
+    for (let i = 0; i < 3; i++) {
+      iconsBio.push(document.getElementById('icon' + (i + 3)));
+      iconsBio[i].addEventListener("mouseover", () => {
+        iconsBio[i].src = iconsBio[i].src.replace('logo', 'logo-o');
+      }, false);
+      iconsBio[i].addEventListener("mouseleave", () => {
+        iconsBio[i].src = iconsBio[i].src.replace('logo-o', 'logo');
+      }, false);
+    }
     //Projects
   } else if (window.document.title == `Projects`) {
     divWrapper.classList.add('divWrapper'); //Project's grid div
@@ -274,7 +303,7 @@ window.onload = () => {
     divIndex.innerHTML = divIndexHtml;    
     divContent.innerHTML = projectsInfo;
     
-    //Elementos en el menu
+    //Elementos en el menu Projects
     //                  ↓
     for (let i = 0; i < 7; i++) {
       menuItems.push(document.getElementById('menu' + (i + 1)));
@@ -282,7 +311,7 @@ window.onload = () => {
       menuItems[i].addEventListener("click", () => openPage(menuItems[i].id, divContent), false);
       menuItems[i].addEventListener("mouseover", () => {tieneFocus(i);}, false);
       menuItems[i].addEventListener("mouseleave", () => {noTieneFocus(i);}, false);
-    }
+    }    
   }  
 }
 
@@ -291,5 +320,5 @@ window.onload = () => {
 //<object type="text/html" data="html_into_div2.html" width="100%" height="100%"></object>
 
 /*
-`<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><span class="navbar-brand">Ramon's Portfolio</span><!-- <a class="navbar-brand" href="#">Ramon's Portfolio</a> --><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="./bio.html">Bio</a></li><li class="nav-item"><a class="nav-link" href="#">Projects</a></li> <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li><li class="nav-item"><a class="nav-link" href="#">Email</a></li><li class="nav-item"><a class="nav-link" href="#">GitHub</a></li></ul></div></nav>`
+`<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><span class="navbar-brand">Ramon's Portfolio</span><!-- <a class="navbar-brand" href="#">Ramon's Portfolio</a> --><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="./bio.html">Bio</a></li><li class="nav-item"><a class="nav-link" href="#">Projects</a></li> <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li><li class="nav-item"><a class="nav-link" href="#">icon</a></li><li class="nav-item"><a class="nav-link" href="#">GitHub</a></li></ul></div></nav>`
 */
